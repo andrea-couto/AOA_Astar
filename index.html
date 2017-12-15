@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <!-- bringing in the necessary files -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <script language="javascript" type="text/javascript" src="node.js"></script>
+  <script language="javascript" type="text/javascript" src="gui.js"></script>
+
+  <script language="javascript" type="text/javascript" src="mazegen.js"></script>
+  <script language="javascript" type="text/javascript" src="astarmazesolver.js"></script>
+
+<!-- some styling for the webpage -->  
+<style>
+    body{
+      padding: 0 ;
+      margin: 10px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- description of A* -->
+    <div style="text-align:center; width: 50%; float: left;"><p ><br>A* is a shortest path finding algorithm that uses a heuristic to determine how far a node is from the ending node.<br> This allows the algorithm to search all possible paths for the one that incurs the smallest cost.<br>
+      <b>g cost:</b> cost of moving from starting node to a given node on grid <br>
+      <b>h cost:</b> estimated cost from given node to target node<br>
+      <b>f cost:</b> g cost + h cost<br>
+    </p>
+
+    <!-- shows the status of the algorithm to the user -->
+    <p id="status" style="text-align: left;"> </p>
+
+    <!-- this section will hold the canvas for the web application -->
+    <div id="sketch-holder">
+      <!-- where the canvas is -->
+    </div></div>
+</body>
+
+</html>
